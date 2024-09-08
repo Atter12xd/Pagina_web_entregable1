@@ -69,3 +69,15 @@ knn.fit(X_train, y_train)
 y_pred_knn = knn.predict(X_test)
 accuracy_knn = accuracy_score(y_test, y_pred_knn)
 print(f"Exactitud del modelo KNN: {accuracy_knn:.2f}")
+
+# Paso 7: Clustering con K-Means
+kmeans = KMeans(n_clusters=3, random_state=42)
+kmeans.fit(X_scaled)
+ventas_df['cluster'] = kmeans.labels_
+
+plt.figure(figsize=(10, 6))
+plt.scatter(X['producto'], X['monto'], c=ventas_df['cluster'])
+plt.xlabel('Producto')
+plt.ylabel('Monto')
+plt.title('Clusters de Productos')
+plt.show()
