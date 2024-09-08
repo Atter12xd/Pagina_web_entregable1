@@ -63,3 +63,8 @@ usuarios_numpy = cargar_datos_numpy('usuarios.csv')
 # Ejemplo: Codificar categorías si es necesario para modelos de ML
 le = LabelEncoder()
 ventas_df['producto_id'] = le.fit_transform(ventas_df['producto_id'])
+
+# Crear características (features) y etiquetas (labels) para un modelo de ejemplo
+# Suponiendo que queremos predecir la compra de un producto basándonos en el historial de ventas
+X = ventas_df[['producto_id', 'cantidad', 'precio']]  # Características simples
+y = ventas_df['comprado']  # Etiqueta: si el producto fue comprado (supuesto)
