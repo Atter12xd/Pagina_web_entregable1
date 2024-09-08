@@ -36,3 +36,6 @@ def mostrar_informacion_basica(dataframe, nombre):
     print(dataframe.head())
     print(f"\nTipos de Datos en {nombre}:")
     print(dataframe.dtypes)
+    
+# Cargar datos usando Pandas
+ventas_df, usuarios_df = cargar_datos_pandas('ventas.csv', 'usuarios.csv')
