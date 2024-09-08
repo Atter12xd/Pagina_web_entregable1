@@ -58,3 +58,8 @@ mostrar_informacion_basica(usuarios_df, 'Usuarios después de limpieza')
 # Cargar datos usando NumPy (opcional)
 ventas_numpy = cargar_datos_numpy('ventas.csv')
 usuarios_numpy = cargar_datos_numpy('usuarios.csv')
+
+# **Preparación de datos para el sistema de recomendación**
+# Ejemplo: Codificar categorías si es necesario para modelos de ML
+le = LabelEncoder()
+ventas_df['producto_id'] = le.fit_transform(ventas_df['producto_id'])
