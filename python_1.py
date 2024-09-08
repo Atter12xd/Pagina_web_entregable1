@@ -43,3 +43,7 @@ ventas_df, usuarios_df = cargar_datos_pandas('ventas.csv', 'usuarios.csv')
 # Mostrar información básica de los datos cargados
 mostrar_informacion_basica(ventas_df, 'Ventas')
 mostrar_informacion_basica(usuarios_df, 'Usuarios')
+
+# Limpiar los datos
+ventas_df = limpiar_datos(ventas_df)
+usuarios_df = limpiar_datos(usuarios_df)
