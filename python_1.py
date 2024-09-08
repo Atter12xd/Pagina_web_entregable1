@@ -39,3 +39,7 @@ def mostrar_informacion_basica(dataframe, nombre):
     
 # Cargar datos usando Pandas
 ventas_df, usuarios_df = cargar_datos_pandas('ventas.csv', 'usuarios.csv')
+
+# Mostrar información básica de los datos cargados
+mostrar_informacion_basica(ventas_df, 'Ventas')
+mostrar_informacion_basica(usuarios_df, 'Usuarios')
