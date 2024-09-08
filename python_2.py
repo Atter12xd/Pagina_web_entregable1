@@ -50,3 +50,15 @@ ventas_df, usuarios_df = cargar_datos_pandas('ventas.csv', 'usuarios.csv')
 ventas_df = limpiar_datos(ventas_df)
 usuarios_df = limpiar_datos(usuarios_df)
 ventas_df = convertir_fechas(ventas_df, 'fecha')
+
+#Paso 5: Preparar los Datos para el Modelo
+le = LabelEncoder()
+ventas_df['producto'] = le.fit_transform(ventas_df['producto'])
+
+X = ventas_df[['producto', 'cantidad', 'monto']]
+y = (ventas_df['monto'] > 100).astype(int)  # Etiqueta binaria simple
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
