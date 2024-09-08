@@ -1,0 +1,21 @@
+cliente,edad,genero,pais,frecuencia_compra
+Cliente 1,64,Femenino,Chile,Alta
+Cliente 2,43,Masculino,Perú,Media
+Cliente 3,63,Femenino,Perú,Alta
+Cliente 4,60,Masculino,Chile,Alta
+Cliente 5,29,Femenino,Chile,Media
+Cliente 6,43,Masculino,Argentina,Alta
+Cliente 7,30,Femenino,Chile,Baja
+Cliente 8,57,Masculino,Colombia,Baja
+Cliente 9,35,Femenino,Perú,Alta
+Cliente 10,42,Masculino,Perú,Media
+Cliente 11,50,Femenino,Colombia,Baja
+Cliente 12,64,Masculino,Chile,Media
+Cliente 13,57,Masculino,Colombia,Media
+Cliente 14,60,Femenino,Colombia,Baja
+Cliente 15,29,Femenino,Argentina,Media
+Cliente 16,61,Masculino,Colombia,Baja
+Cliente 17,53,Femenino,Perú,Media
+Cliente 18,65,Masculino,Colombia,Baja
+Cliente 19,21,Masculino,Perú,Alta
+Cliente 20,22,Masculino,Perú,Baja
