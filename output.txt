@@ -1,0 +1,107 @@
+P gina de c¢digos activa: 65001
+Exactitud del modelo KNN: 0.90
+Epoch 20, Loss: 0.6904599070549011
+Epoch 40, Loss: 0.6482354998588562
+Epoch 60, Loss: 0.6142762899398804
+Epoch 80, Loss: 0.5864315032958984
+Epoch 100, Loss: 0.563136100769043
+Epoch 1/50
+20/20 - 1s - 34ms/step - accuracy: 0.2650 - loss: 0.9476
+Epoch 2/50
+20/20 - 0s - 2ms/step - accuracy: 0.2900 - loss: 0.8923
+Epoch 3/50
+20/20 - 0s - 2ms/step - accuracy: 0.3150 - loss: 0.8447
+Epoch 4/50
+20/20 - 0s - 2ms/step - accuracy: 0.3600 - loss: 0.8031
+Epoch 5/50
+20/20 - 0s - 2ms/step - accuracy: 0.3900 - loss: 0.7671
+Epoch 6/50
+20/20 - 0s - 2ms/step - accuracy: 0.4300 - loss: 0.7344
+Epoch 7/50
+20/20 - 0s - 2ms/step - accuracy: 0.4800 - loss: 0.7058
+Epoch 8/50
+20/20 - 0s - 2ms/step - accuracy: 0.5250 - loss: 0.6810
+Epoch 9/50
+20/20 - 0s - 2ms/step - accuracy: 0.5800 - loss: 0.6567
+Epoch 10/50
+20/20 - 0s - 2ms/step - accuracy: 0.6400 - loss: 0.6352
+Epoch 11/50
+20/20 - 0s - 2ms/step - accuracy: 0.6600 - loss: 0.6154
+Epoch 12/50
+20/20 - 0s - 2ms/step - accuracy: 0.6900 - loss: 0.5968
+Epoch 13/50
+20/20 - 0s - 2ms/step - accuracy: 0.7450 - loss: 0.5796
+Epoch 14/50
+20/20 - 0s - 2ms/step - accuracy: 0.7900 - loss: 0.5621
+Epoch 15/50
+20/20 - 0s - 2ms/step - accuracy: 0.8000 - loss: 0.5462
+Epoch 16/50
+20/20 - 0s - 2ms/step - accuracy: 0.8150 - loss: 0.5304
+Epoch 17/50
+20/20 - 0s - 2ms/step - accuracy: 0.8150 - loss: 0.5157
+Epoch 18/50
+20/20 - 0s - 2ms/step - accuracy: 0.8350 - loss: 0.5013
+Epoch 19/50
+20/20 - 0s - 2ms/step - accuracy: 0.8350 - loss: 0.4871
+Epoch 20/50
+20/20 - 0s - 2ms/step - accuracy: 0.8400 - loss: 0.4729
+Epoch 21/50
+20/20 - 0s - 2ms/step - accuracy: 0.8450 - loss: 0.4594
+Epoch 22/50
+20/20 - 0s - 2ms/step - accuracy: 0.8550 - loss: 0.4460
+Epoch 23/50
+20/20 - 0s - 2ms/step - accuracy: 0.8500 - loss: 0.4330
+Epoch 24/50
+20/20 - 0s - 2ms/step - accuracy: 0.8550 - loss: 0.4206
+Epoch 25/50
+20/20 - 0s - 2ms/step - accuracy: 0.8650 - loss: 0.4083
+Epoch 26/50
+20/20 - 0s - 2ms/step - accuracy: 0.8700 - loss: 0.3970
+Epoch 27/50
+20/20 - 0s - 2ms/step - accuracy: 0.8750 - loss: 0.3854
+Epoch 28/50
+20/20 - 0s - 2ms/step - accuracy: 0.8800 - loss: 0.3745
+Epoch 29/50
+20/20 - 0s - 4ms/step - accuracy: 0.8850 - loss: 0.3638
+Epoch 30/50
+20/20 - 0s - 2ms/step - accuracy: 0.8950 - loss: 0.3537
+Epoch 31/50
+20/20 - 0s - 2ms/step - accuracy: 0.9000 - loss: 0.3438
+Epoch 32/50
+20/20 - 0s - 2ms/step - accuracy: 0.9100 - loss: 0.3343
+Epoch 33/50
+20/20 - 0s - 2ms/step - accuracy: 0.9100 - loss: 0.3247
+Epoch 34/50
+20/20 - 0s - 2ms/step - accuracy: 0.9100 - loss: 0.3157
+Epoch 35/50
+20/20 - 0s - 2ms/step - accuracy: 0.9150 - loss: 0.3071
+Epoch 36/50
+20/20 - 0s - 2ms/step - accuracy: 0.9150 - loss: 0.2987
+Epoch 37/50
+20/20 - 0s - 2ms/step - accuracy: 0.9100 - loss: 0.2908
+Epoch 38/50
+20/20 - 0s - 2ms/step - accuracy: 0.9150 - loss: 0.2833
+Epoch 39/50
+20/20 - 0s - 2ms/step - accuracy: 0.9150 - loss: 0.2760
+Epoch 40/50
+20/20 - 0s - 2ms/step - accuracy: 0.9300 - loss: 0.2691
+Epoch 41/50
+20/20 - 0s - 2ms/step - accuracy: 0.9250 - loss: 0.2621
+Epoch 42/50
+20/20 - 0s - 2ms/step - accuracy: 0.9250 - loss: 0.2558
+Epoch 43/50
+20/20 - 0s - 2ms/step - accuracy: 0.9300 - loss: 0.2493
+Epoch 44/50
+20/20 - 0s - 2ms/step - accuracy: 0.9450 - loss: 0.2434
+Epoch 45/50
+20/20 - 0s - 2ms/step - accuracy: 0.9500 - loss: 0.2377
+Epoch 46/50
+20/20 - 0s - 2ms/step - accuracy: 0.9500 - loss: 0.2320
+Epoch 47/50
+20/20 - 0s - 2ms/step - accuracy: 0.9600 - loss: 0.2268
+Epoch 48/50
+20/20 - 0s - 2ms/step - accuracy: 0.9600 - loss: 0.2221
+Epoch 49/50
+20/20 - 0s - 2ms/step - accuracy: 0.9600 - loss: 0.2164
+Epoch 50/50
+20/20 - 0s - 2ms/step - accuracy: 0.9600 - loss: 0.2116
