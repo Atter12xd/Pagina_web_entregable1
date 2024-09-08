@@ -81,3 +81,32 @@ plt.xlabel('Producto')
 plt.ylabel('Monto')
 plt.title('Clusters de Productos')
 plt.show()
+
+#Paso 8: Clasificación con PyTorch
+class SimpleNN(nn.Module):
+    def __init__(self):
+        super(SimpleNN, self).__init__()
+        self.fc1 = nn.Linear(3, 10)
+        self.fc2 = nn.Linear(10, 1)
+    
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.sigmoid(self.fc2(x))
+        return x
+
+X_tensor = torch.FloatTensor(X_scaled)
+y_tensor = torch.FloatTensor(y.values).reshape(-1, 1)
+
+model = SimpleNN()
+criterion = nn.BCELoss()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+for epoch in range(100):
+    optimizer.zero_grad()
+    outputs = model(X_tensor)
+    loss = criterion(outputs, y_tensor)
+    loss.backward()
+    optimizer.step()
+    
+    if (epoch+1) % 20 == 0:
+        print(f'Epoch {epoch+1}, Loss: {loss.item()}')
