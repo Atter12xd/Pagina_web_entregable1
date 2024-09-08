@@ -27,3 +27,20 @@ import torch.optim as optim
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
+
+#Paso 3: Funciones para Cargar y Preparar los Datos
+def cargar_datos_pandas(archivo_ventas, archivo_usuarios):
+    ventas_df = pd.read_csv(archivo_ventas)
+    usuarios_df = pd.read_csv(archivo_usuarios)
+    return ventas_df, usuarios_df
+
+def limpiar_datos(dataframe):
+    dataframe.dropna(inplace=True)
+    return dataframe
+
+def convertir_fechas(dataframe, columna_fecha):
+    if columna_fecha in dataframe.columns:
+        dataframe[columna_fecha] = pd.to_datetime(dataframe[columna_fecha])
+    else:
+        print(f"La columna '{columna_fecha}' no existe en el DataFrame.")
+    return dataframe
