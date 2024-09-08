@@ -44,3 +44,9 @@ def convertir_fechas(dataframe, columna_fecha):
     else:
         print(f"La columna '{columna_fecha}' no existe en el DataFrame.")
     return dataframe
+
+#Paso 4: Cargar y Limpiar los Datos
+ventas_df, usuarios_df = cargar_datos_pandas('ventas.csv', 'usuarios.csv')
+ventas_df = limpiar_datos(ventas_df)
+usuarios_df = limpiar_datos(usuarios_df)
+ventas_df = convertir_fechas(ventas_df, 'fecha')
