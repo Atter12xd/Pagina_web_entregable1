@@ -68,3 +68,6 @@ ventas_df['producto_id'] = le.fit_transform(ventas_df['producto_id'])
 # Suponiendo que queremos predecir la compra de un producto basándonos en el historial de ventas
 X = ventas_df[['producto_id', 'cantidad', 'precio']]  # Características simples
 y = ventas_df['comprado']  # Etiqueta: si el producto fue comprado (supuesto)
+
+# Dividir los datos en conjuntos de entrenamiento y prueba
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
