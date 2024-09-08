@@ -79,3 +79,9 @@ modelo.fit(X_train, y_train)
 # Evaluar el modelo (ejemplo básico)
 accuracy = modelo.score(X_test, y_test)
 print(f"\nExactitud del modelo de recomendación: {accuracy:.2f}")
+
+# **Visualización de datos**
+plt.figure(figsize=(10, 6))
+sns.countplot(x='producto_id', data=ventas_df)
+plt.title('Distribución de Ventas por Producto')
+plt.show()
