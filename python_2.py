@@ -110,3 +110,16 @@ for epoch in range(100):
     
     if (epoch+1) % 20 == 0:
         print(f'Epoch {epoch+1}, Loss: {loss.item()}')
+        
+# Paso 9: Red Neuronal con TensorFlow y Keras
+model_keras = Sequential([
+    Dense(10, input_dim=3, activation='relu'),  # Capa oculta
+    Dense(1, activation='sigmoid')  # Capa de salida
+])
+
+model_keras.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
+model_keras.fit(X_scaled, y, epochs=50, batch_size=10, verbose=2)
+
+loss_keras, accuracy_keras = model_keras.evaluate(X_scaled, y)
+print(f'Exactitud del modelo con Keras: {accuracy_keras:.2f}')
