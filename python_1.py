@@ -54,3 +54,7 @@ ventas_df = convertir_fechas(ventas_df, 'fecha')
 # Mostrar información después de la limpieza y conversión de fechas
 mostrar_informacion_basica(ventas_df, 'Ventas después de limpieza y conversión de fechas')
 mostrar_informacion_basica(usuarios_df, 'Usuarios después de limpieza')
+
+# Cargar datos usando NumPy (opcional)
+ventas_numpy = cargar_datos_numpy('ventas.csv')
+usuarios_numpy = cargar_datos_numpy('usuarios.csv')
