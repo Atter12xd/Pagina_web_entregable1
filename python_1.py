@@ -50,3 +50,7 @@ usuarios_df = limpiar_datos(usuarios_df)
 
 # Convertir fechas en el DataFrame de ventas
 ventas_df = convertir_fechas(ventas_df, 'fecha')
+
+# Mostrar información después de la limpieza y conversión de fechas
+mostrar_informacion_basica(ventas_df, 'Ventas después de limpieza y conversión de fechas')
+mostrar_informacion_basica(usuarios_df, 'Usuarios después de limpieza')
