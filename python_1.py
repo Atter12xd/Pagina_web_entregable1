@@ -75,3 +75,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Entrenar un modelo simple de clasificación (puedes usar otros modelos más adecuados)
 modelo = RandomForestClassifier(n_estimators=100, random_state=42)
 modelo.fit(X_train, y_train)
+
+# Evaluar el modelo (ejemplo básico)
+accuracy = modelo.score(X_test, y_test)
+print(f"\nExactitud del modelo de recomendación: {accuracy:.2f}")
