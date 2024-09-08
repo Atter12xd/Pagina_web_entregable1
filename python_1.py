@@ -22,3 +22,10 @@ def limpiar_datos(dataframe):
     dataframe.dropna(inplace=True)
     return dataframe
 
+# Función para convertir fechas en un DataFrame si la columna 'fecha' existe
+def convertir_fechas(dataframe, columna_fecha):
+    if columna_fecha in dataframe.columns:
+        dataframe[columna_fecha] = pd.to_datetime(dataframe[columna_fecha])
+    else:
+        print(f"La columna {columna_fecha} no existe en el DataFrame.")
+    return dataframe
