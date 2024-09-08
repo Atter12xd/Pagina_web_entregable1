@@ -29,3 +29,10 @@ def convertir_fechas(dataframe, columna_fecha):
     else:
         print(f"La columna {columna_fecha} no existe en el DataFrame.")
     return dataframe
+
+# Función para mostrar las primeras filas y los tipos de datos de un DataFrame
+def mostrar_informacion_basica(dataframe, nombre):
+    print(f"\nDatos de {nombre}:")
+    print(dataframe.head())
+    print(f"\nTipos de Datos en {nombre}:")
+    print(dataframe.dtypes)
