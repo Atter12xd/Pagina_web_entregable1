@@ -7,3 +7,8 @@ from sklearn.ensemble import RandomForestClassifier  # Ejemplo de modelo para re
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Función para cargar los datos desde archivos CSV usando Pandas
+def cargar_datos_pandas(archivo_ventas, archivo_usuarios):
+    ventas_df = pd.read_csv(archivo_ventas)
+    usuarios_df = pd.read_csv(archivo_usuarios)
+    return ventas_df, usuarios_df
