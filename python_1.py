@@ -71,3 +71,7 @@ y = ventas_df['comprado']  # Etiqueta: si el producto fue comprado (supuesto)
 
 # Dividir los datos en conjuntos de entrenamiento y prueba
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Entrenar un modelo simple de clasificación (puedes usar otros modelos más adecuados)
+modelo = RandomForestClassifier(n_estimators=100, random_state=42)
+modelo.fit(X_train, y_train)
