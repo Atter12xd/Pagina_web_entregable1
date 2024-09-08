@@ -11,7 +11,7 @@ if sys.platform == "win32":
     os.system('chcp 65001')  # Cambia la codificación a UTF-8
 
 # Paso 2: Importar Librerías Necesarias
-# import pandas as pd
+import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler
