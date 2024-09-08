@@ -16,3 +16,9 @@ def cargar_datos_pandas(archivo_ventas, archivo_usuarios):
 # Función para cargar los datos desde archivos CSV usando NumPy (opcional para otros análisis)
 def cargar_datos_numpy(archivo):
     return np.genfromtxt(archivo, delimiter=',', skip_header=1)
+
+# Función para limpiar los datos eliminando filas con valores faltantes
+def limpiar_datos(dataframe):
+    dataframe.dropna(inplace=True)
+    return dataframe
+
